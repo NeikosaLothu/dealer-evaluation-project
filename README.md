@@ -1,38 +1,31 @@
-# Dealer Evaluation Project
+# fullstack_developer_capstone
 
 ## Repository Name
-dealer-evaluation-project
+xrwvm-fullstack_developer_capstone
 
 ## Project Name
-Dealer Evaluation Full Stack Application
+fullstack_developer_capstone
 
 ## Description
-This project is a cloud-native full stack dealership application developed as part of the IBM Cloud Native Full Stack Development Capstone project. The application demonstrates microservices deployment, containerization, Kubernetes orchestration, Django backend services, and React frontend integration.
-
-## Features
-- Dealer inventory management
-- Product and dealer pricing services
-- User authentication and registration
-- Dealer evaluation frontend
-- Kubernetes deployment and autoscaling
+This project is part of the IBM Full Stack Software Developer Capstone course.  
+It includes a Django and React based Dealer Evaluation application with:
+- Dealer listings
+- Dealer reviews
+- User authentication
+- CI/CD workflow
+- Kubernetes deployment
 - Docker containerization
-- REST API integration
-- Django admin management
 
 ## Technologies Used
-- Python
 - Django
 - React
 - Node.js
 - Docker
 - Kubernetes
-- IBM Cloud
-- HTML/CSS/JavaScript
+- GitHub Actions
 
-## Microservices
-1. Product Details Microservice
-2. Dealer Pricing Microservice
-3. Dealer Evaluation Frontend Microservice
+## Author
+NeikosaLothu
 
 ## Deployment
 The application is containerized using Docker and deployed on Kubernetes clusters using deployment YAML configuration files.
