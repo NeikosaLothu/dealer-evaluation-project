@@ -1,185 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Dealer Evaluation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Best Cars Dealership</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css" />
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        nav {
-            background-color: #0d1b2a;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a.active {
-            border-bottom: 2px solid #00b4d8;
-            padding-bottom: 5px;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #1b263b;
-            color: white;
-        }
-
-        .container {
-            width: 85%;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .contact-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
-
-        .contact-card,
-        .contact-form {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
-            width: 400px;
-        }
-
-        .contact-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .contact-card h2,
-        .contact-form h2 {
-            margin-top: 0;
-        }
-
-        .contact-card p {
-            line-height: 1.7;
-            color: #555;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            background-color: #0077cc;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #0d1b2a;
-            color: white;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="Contact.html" class="active">Contact Us</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Best Cars</a>
+
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/">Home</a>
+            <a class="nav-item nav-link" href="/about">About Us</a>
+            <a class="nav-item nav-link active" href="/contact">Contact Us</a>
+        </div>
     </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Contact Us</h1>
-        <p>We would love to hear from you!</p>
-    </header>
+    <div class="container mt-4">
 
-    <!-- Main Content -->
-    <div class="container">
+        <div class="text-center">
+            <img src="/static/contactus.png" alt="Contact Us"
+                class="img-fluid rounded mb-4" width="600">
+        </div>
 
-        <div class="contact-wrapper">
+        <div class="card shadow p-4">
 
-            <!-- Contact Information -->
-            <div class="contact-card">
+            <h1 class="text-center mb-4">Contact Best Cars Dealership</h1>
 
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
-                     alt="Contact Team">
-
-                <h2>Dealer Evaluation Team</h2>
-
-                <p>
-                    Reach out to us for support, project collaboration,
-                    or dealership management solutions.
-                </p>
-
-                <p><strong>Email:</strong> support@dealerevaluation.com</p>
-                <p><strong>Phone:</strong> +1 (212) 555-0101</p>
-                <p><strong>Location:</strong> New York, USA</p>
-
+            <div class="text-center mb-4">
+                <img src="/static/cars.jpeg" alt="Cars"
+                    class="img-fluid rounded" width="500">
             </div>
 
-            <!-- Contact Form -->
-            <div class="contact-form">
+            <h4>Our Office</h4>
 
-                <h2>Send a Message</h2>
+            <p>
+                Best Cars Dealership<br>
+                100 Main Street<br>
+                Dallas, Texas, USA
+            </p>
 
-                <form>
+            <h4>Contact Information</h4>
 
-                    <input type="text"
-                           placeholder="Enter your name"
-                           required>
-
-                    <input type="email"
-                           placeholder="Enter your email"
-                           required>
-
-                    <textarea rows="6"
-                              placeholder="Write your message here..."
-                              required></textarea>
-
-                    <button type="submit">Submit</button>
-
-                </form>
-
-            </div>
+            <p>
+                Email: support@bestcars.com<br>
+                Phone: +1 800 123 4567<br>
+                Working Hours: Mon - Sat : 9 AM to 8 PM
+            </p>
 
         </div>
 
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Dealer Evaluation Project | IBM Cloud Native Full Stack Development</p>
-    </footer>
-
 </body>
+
 </html>
