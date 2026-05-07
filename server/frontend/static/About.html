@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Dealer Evaluation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Best Cars Dealership</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 
     <style>
         body {
@@ -16,128 +15,138 @@
             background-color: #f4f4f4;
         }
 
-        header {
-            background-color: #0d1b2a;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        nav {
+            background-color: #0d6efd;
+            padding: 15px;
         }
 
-        .container {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         .about-section {
+            padding: 40px;
             text-align: center;
-            margin-bottom: 40px;
+            background-color: white;
         }
 
-        .team {
+        .about-section h1 {
+            color: #0d6efd;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .team-container {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             flex-wrap: wrap;
+            margin-top: 40px;
         }
 
-        .card {
-            background: white;
+        .team-card {
+            background-color: white;
             width: 300px;
             border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
-            overflow: hidden;
-            text-align: center;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
         }
 
-        .card img {
+        .team-card img {
             width: 100%;
             height: 250px;
             object-fit: cover;
+            border-radius: 10px;
         }
 
-        .card h3 {
-            margin: 10px 0 5px;
+        .team-card h2 {
+            margin-top: 15px;
+            color: #0d6efd;
         }
 
-        .card p {
-            padding: 0 15px;
+        .team-card h3 {
             color: #555;
         }
 
-        .email {
-            color: #0077cc;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        footer {
-            background-color: #0d1b2a;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
+        .team-card p {
+            font-size: 16px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <section class="about-section">
         <h1>About Us</h1>
-        <p>Dealer Evaluation Full Stack Application</p>
-    </header>
 
-    <div class="container">
+        <p>
+            Welcome to Best Cars dealership, home to the best cars in North America.
+            We deal in sale of domestic and imported cars at reasonable prices.
+        </p>
 
-        <section class="about-section">
-            <h2>Who We Are</h2>
-            <p>
-                We are a cloud-native development team building scalable dealership
-                management applications using Django, React, Docker, and Kubernetes.
-            </p>
-        </section>
+        <div class="team-container">
 
-        <section class="team">
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+                     alt="John Smith">
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Team Member">
-                <h3>Neikosa Lothu</h3>
-                <p><strong>Full Stack Developer</strong></p>
+                <h2>John Smith</h2>
+                <h3>CEO</h3>
+
                 <p>
-                    Responsible for backend APIs, frontend integration,
-                    and Kubernetes deployment.
+                    John leads the dealership operations and business strategy with
+                    over 15 years of automotive industry experience.
                 </p>
-                <p class="email">neikosa@example.com</p>
+
+                <p>Email: johnsmith@bestcars.com</p>
             </div>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Team Member">
-                <h3>Sarah Johnson</h3>
-                <p><strong>Frontend Developer</strong></p>
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+                     alt="Sarah Johnson">
+
+                <h2>Sarah Johnson</h2>
+                <h3>Sales Manager</h3>
+
                 <p>
-                    Developed responsive React interfaces and user experience design.
+                    Sarah manages customer relationships and vehicle sales while
+                    ensuring excellent customer satisfaction.
                 </p>
-                <p class="email">sarah@example.com</p>
+
+                <p>Email: sarahjohnson@bestcars.com</p>
             </div>
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" alt="Team Member">
-                <h3>Michael Brown</h3>
-                <p><strong>DevOps Engineer</strong></p>
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+                     alt="Michael Brown">
+
+                <h2>Michael Brown</h2>
+                <h3>Technical Lead</h3>
+
                 <p>
-                    Managed Docker containerization and Kubernetes orchestration.
+                    Michael supervises vehicle servicing, maintenance operations,
+                    and dealership technical support systems.
                 </p>
-                <p class="email">michael@example.com</p>
+
+                <p>Email: michaelbrown@bestcars.com</p>
             </div>
 
-        </section>
-
-    </div>
-
-    <footer>
-        <p>© 2026 Dealer Evaluation Project | IBM Cloud Native Full Stack Development</p>
-    </footer>
+        </div>
+    </section>
 
 </body>
 </html>
